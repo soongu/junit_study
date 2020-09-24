@@ -1,0 +1,30 @@
+package kr.co.kokono.junit_study._02;
+
+import java.util.*;
+import java.util.function.Consumer;
+
+public class Criteria implements Iterable<Criterion> {
+
+    private List<Criterion> criteria = new ArrayList<>();
+
+    public void add(Criterion criterion) {
+        criteria.add(criterion);
+    }
+
+    @Override
+    public Iterator<Criterion> iterator() {
+        return criteria.iterator();
+    }
+
+    //산술평균
+    public double arithmeticMean() {
+        return 0.0;
+    }
+
+    //기하평균
+    public double geometricMean(int[] numbers) {
+        int totalProduct = Arrays.stream(numbers).reduce(1, (product, number) -> product * number);
+        return Math.pow(totalProduct, 1.0 / numbers.length);
+    }
+
+}

@@ -17,9 +17,9 @@ public class ScoreCollectionTest {
         collection.add(() -> 7);
 
         //when
-        double mean = collection.arithmeticMean().getAsDouble();
+        double actualMean = collection.arithmeticMean().getAsDouble();
 
         //then
-        assertThat(mean, equalTo(6.0));
+        assertThat(actualMean, equalTo(6.0));
     }
 }

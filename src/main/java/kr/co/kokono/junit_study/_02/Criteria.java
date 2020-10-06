@@ -1,7 +1,9 @@
 package kr.co.kokono.junit_study._02;
 
-import java.util.*;
-import java.util.function.Consumer;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
 
 public class Criteria implements Iterable<Criterion> {
 
